@@ -1,13 +1,12 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { CalculatorContext } from './Calculator.jsx';
 
 function NumKey(props) {
   const {screenText, setScreenText} = useContext(CalculatorContext);
 
   const handleClick = () => {
-    setScreenText((prev) => {
-      return prev + ' ' + props.number;
-    })
+    let newScreenText = screenText + '' + props.number;
+    setScreenText(newScreenText);
   }
 
   return (

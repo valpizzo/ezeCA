@@ -1,8 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { CalculatorContext } from './Calculator.jsx';
 
 function Screen() {
-  const {screenText, setScreenText} = useContext(CalculatorContext);
+  const {screenText} = useContext(CalculatorContext);
 
   return (
     <div className="screen">

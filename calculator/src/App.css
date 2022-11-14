@@ -1,6 +1,15 @@
+:root {
+  --dark: rgb(54, 54, 54);
+  --light: rgb(169, 157, 157);
+}
+
 body {
-  background-color: rgb(54, 54, 54);
+  background-color: var(--dark);
   color: rgb(201, 197, 197);
+}
+
+p {
+  font-size: 2em;
 }
 
 .calcContainer {
@@ -11,14 +20,16 @@ body {
 
 .screen {
   background-color: black;
+  border-radius: 10px;
   height: 70vh;
   width: 48vw;
 }
 
 .keypad {
   background-color: rgb(169, 157, 157);
-  color: rgb(54, 54, 54);
-  height: 70vh;
+  border-radius: 10px;
+  color: var(--dark);
+  min-height: 70vh;
   width: 48vw;
 }
 
@@ -32,13 +43,15 @@ body {
 .key {
   cursor: pointer;
   background-color: rgb(214, 199, 199);
-  border: 2px solid rgb(54, 54, 54);
+  color: var(--dark);
+  font-size: .7em;
+  border: 2px solid var(--dark);
   border-radius: 2px;
   text-align: center;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 }
 
 .key:hover {
-  background-color: rgb(112, 111, 111);
+  background-color: rgb(207, 181, 13);
 }
