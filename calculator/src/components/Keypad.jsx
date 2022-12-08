@@ -3,7 +3,7 @@ import Key from './Key.jsx';
 
 function Keypad() {
   const nums = Array.from(Array(10).keys());
-  const keys = ['(', ')', '+', '-', '*', '÷', '^', '.', '=', 'Clear'];
+  const keys = ['(', ')', '+', '-', '*', '/', '^', '.', '=', 'Clear'];
 
   return (
     <div className="keypad">
