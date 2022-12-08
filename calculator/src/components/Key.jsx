@@ -19,6 +19,8 @@ function Key(props) {
       } else {
         setScreenText(screenText + ' ' + props.symbol + ' ');
       }
+    } else if (e.target.outerText === '-') {
+      setScreenText(screenText + '-');
     }
   }
 
